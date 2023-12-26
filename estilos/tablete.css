@@ -1,1 +1,36 @@
 @charset "utf-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+
+    body ,html {
+        background-color: var(--Color-9);
+       
+    }
+    #login { 
+        background-color: var(--Color-6);
+
+        width: 90vw;
+        overflow: hidden;/* Isso pode ser útil para garantir que não haja vazamento de flutuação */
+    }
+    
+    #login #imagen { 
+        background: var(--Color-2) url(../imagens/login03.jpg) no-repeat;
+        background-position:  center;
+        background-size: 190%;
+
+
+
+        float: left;
+        width: 30%;
+        height: 100%;
+        margin-right: 5%;
+    }
+
+    #login #formulairo  {
+        float: right;
+        width: 65%; /* Ajustei a largura para 65% para dar espaço para a margem à direita */
+        height: 100%;
+         /* Adicionei uma margem à esquerda para dar espaço entre a imagem e o formulário */
+    }
+}

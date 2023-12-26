@@ -1,1 +1,78 @@
 @charset "utf-8";
+
+/*
+paleta de cores:
+verde: #49a09d
+lilas: #5f2c82*/
+
+
+/* Color Theme Swatches in Hex */
+:root{
+--Color-1 : #6BF2D9; 
+--Color-2 : #3772A6; 
+--Color-3 : #8fe9d8; 
+--Color-4 : #1698DE; 
+--Color-5 : #9006E0; 
+--Color-6 : #cdcad9aa; 
+--Color-7 : #0e323f; 
+--Color-8 : #3D4038;
+--Color-9 : #717366;
+
+
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+
+}
+
+body ,html {
+    background-color: var(--Color-7);
+    height: 100vh;
+    width: 100vw;
+}
+
+main { 
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#login { 
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   overflow: hidden;
+    background-color:var(--Color-6);
+    height: 550px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0px,0px,10px rgba(0, 0, 0, 0.451);
+    margin: 5px;
+
+    transition :width  0.3s  , height 0.35;
+    transition-timing-function: ease;
+}
+
+#login > #imagen { 
+display: block;
+ background: var(--Color-2) url(../imagens/login01.jpg) no-repeat;
+ background-size: cover;
+ background-position: left center;
+ height: 200px;
+
+
+}
+
+#login > #formulario { 
+    padding: 15px;
+  
+    display: block;
+
+}
+
+
