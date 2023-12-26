@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projeto login </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/pc.css">
     <link rel="stylesheet" href="estilos/tablete.css">
@@ -17,7 +19,27 @@
             <div id="formulario">
                 <h1>login</h1>
                 <p>seja bem-vido(a) novamente.faça login para acesssar sua conta e poder fazer as configurações no seu ambiente</p>
-                <form  action="login.php" method="post">
+                <form  action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="login" id="ilogin" placeholder="seu email" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">login</label>
+
+                    </div>
+
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+
+                        <input type="password" name="senha" id="isenha" placeholder=" senha de 8 digito " autocomplete="current-password" required maxlength="8" minlength="8" >
+                        <label for="isenha">Senha</label>
+
+
+                    </div>
+
+                    <input type="submit" value="entrar">
+                    <a href="#"> 
+                        Esqueci a senha <i class="material-icons">mail</i>
+                    </a>
                     
                 </form>
 
