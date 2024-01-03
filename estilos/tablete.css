@@ -33,4 +33,49 @@
         height: 100%;
          /* Adicionei uma margem à esquerda para dar espaço entre a imagem e o formulário */
     }
+
+    form >input[type=submit]{
+        font-size: 1em;
+        height: 40px;
+         width: 60%;
+
+
+        background-color: #49a09d;
+        color: white;
+        border:none;
+        border-radius: 5px;
+        cursor: pointer;
+        
+    }
+    
+    form > input[type=submit]:hover{
+        background-color:#2e6664 ;
+    
+    }
+    
+    form > a { 
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        width: 60%;
+        height: 40px;
+        padding-top: 5px;
+        margin-top: 5px;
+        background-color: white;
+        color: #2d6462;
+        border:1px solid #49a09d;
+        border-radius: 7px;
+        text-decoration: none;
+    }
+    
+    form > a:hover { 
+        background-color:#6cd3cf ;
+    
+    }
+    
+    form > a > i { 
+        font-size:0.8em;
+    }
+    
+    
 }
